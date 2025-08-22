@@ -8,6 +8,9 @@ const API = axios.create({
   timeout: 10000, // 10 second timeout
 });
 
+// Add debug logging to confirm the URL
+console.log('API Base URL:', import.meta.env.VITE_API_URL);
+
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');
   if (token) {

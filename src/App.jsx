@@ -6,6 +6,10 @@ import ViewRequests from './pages/ViewRequests';
 import Home from './pages/Home';
 import PrivateRoute from './components/PrivateRoute';
 
+// DEBUG: Check environment variables
+console.log('Environment variables:', import.meta.env)
+console.log('API URL:', import.meta.env.VITE_API_URL)
+
 export default function App() {
   return (
     <Router>
